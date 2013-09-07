@@ -93,8 +93,10 @@ def main(argv=sys.argv):
         mapper('gender', 'referrer', 'Gender vs. source'),
         mapper('channels', 'referrer', 'Channel vs. source'),
         mapper('continent', 'referrer', 'Location vs. source'),
-#        mapper('reason', 'referrer', 'Reason vs. source'),
-#        mapper('age', 'reason', 'Age vs. reason'),
+        mapper('why', 'referrer', 'Reason vs. source'),
+        mapper('age', 'why', 'Age vs. reason'),
+        mapper('frequency', 'first', 'Frequency vs. "veteranity"'),
+        #mapper('frequency', 'channels', 'Frequency vs. diversity'),
         )
 
     for row in data:
